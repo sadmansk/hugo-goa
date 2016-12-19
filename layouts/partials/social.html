@@ -18,7 +18,10 @@
   <a href="https://linkedin.com/in/{{.}}"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
   {{ end }}
   {{ with .Site.Params.social.stackoverflow }}
-  <a href="https://stackoverflow.com/users/{{.}}"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
+  <a href="https://stackoverflow.com/story/{{.}}"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
+  {{ end }}
+  {{ with .Site.Params.social.gitlab }}
+  <a href="https://git.sadmansk.com/{{.}}"><i class="fa fa-gitlab" aria-hidden="true"></i></a>
   {{ end }}
   {{ with .Site.Params.social.email }}
   <a href="mailto:{{.}}"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
